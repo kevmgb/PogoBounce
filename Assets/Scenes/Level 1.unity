@@ -2755,6 +2755,30 @@ PrefabInstance:
       propertyPath: m_MatchWidthOrHeight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 81.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 5653793305030978214, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2842,6 +2866,14 @@ PrefabInstance:
     - target: {fileID: 7302451592857546234, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426496282286259669, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426496282286259669, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8546599288803142900, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: player
