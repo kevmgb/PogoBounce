@@ -42,7 +42,7 @@ public class characterController : MonoBehaviour
     {
         // Jump constantly
 
-        rb2D.AddForce(transform.up * jumpingForce, ForceMode2D.Impulse);
+        rb2D.AddForce(transform.up * jumpingForce * Time.deltaTime, ForceMode2D.Impulse);
         // rb2D.velocity = new Vector3(0, jumpingForce, 0);
         isGrounded = false;
     }

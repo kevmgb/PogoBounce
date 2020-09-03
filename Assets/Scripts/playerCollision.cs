@@ -39,7 +39,7 @@ public class playerCollision : MonoBehaviour
 
         if (collision.gameObject.tag == "Spring")
         {
-            movement.rb2D.AddForce(transform.up * SpringForce, ForceMode2D.Impulse);
+            movement.rb2D.AddForce(transform.up * SpringForce *Time.deltaTime, ForceMode2D.Impulse);
         }
     }
 }
