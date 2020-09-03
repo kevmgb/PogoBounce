@@ -1,14 +1,27 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerCollision : MonoBehaviour
 {
     public characterController movement; // reference to our character controller script
+
+    int nextScene;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "finish")
         {
             movement.enabled = false;
+
+            // Unlock next scene //
+            nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+
+            if (nextScene > PlayerPrefs.GetInt("LevelAt"))
+            {
+                PlayerPrefs.SetInt("levelAt", nextScene);
+            }
+            // End // 
+
             FindObjectOfType<gameManager>().LevelComplete();
         }
 

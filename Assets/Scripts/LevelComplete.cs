@@ -8,12 +8,6 @@ public class LevelComplete : MonoBehaviour
     {
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextScene);
-
-        if(nextScene > PlayerPrefs.GetInt("LevelAt"))
-        {
-            PlayerPrefs.SetInt("levelAt", nextScene);
-        }
-
     }
 
     public void RetryLevel()
