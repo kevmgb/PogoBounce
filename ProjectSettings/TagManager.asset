@@ -9,6 +9,7 @@ TagManager:
   - finish
   - OOB
   - Lethal
+  - CanJump
   layers:
   - Default
   - TransparentFX

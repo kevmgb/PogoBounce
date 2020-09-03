@@ -24,10 +24,14 @@ public class playerCollision : MonoBehaviour
 
             FindObjectOfType<gameManager>().LevelComplete();
         }
+    }
 
-        if (other.gameObject.tag == "Lethal")
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Lethal")
         {
             movement.enabled = false;
+            Debug.Log("You hit a lethal object");
             FindObjectOfType<gameManager>().EndGame();
         }
     }
