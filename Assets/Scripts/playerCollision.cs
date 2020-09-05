@@ -7,8 +7,6 @@ public class playerCollision : MonoBehaviour
 
     int nextScene;
 
-    public float SpringForce = 2f;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "finish")
@@ -35,11 +33,6 @@ public class playerCollision : MonoBehaviour
             movement.enabled = false;
             Debug.Log("You hit a lethal object");
             FindObjectOfType<gameManager>().EndGame();
-        }
-
-        if (collision.gameObject.tag == "Spring")
-        {
-            movement.rb2D.AddForce(transform.up * SpringForce *Time.deltaTime, ForceMode2D.Impulse);
         }
     }
 }
