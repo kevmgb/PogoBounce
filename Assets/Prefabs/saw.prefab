@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 9
-  speed: 1
+  speed: 4
   pos1: {fileID: 0}
   pos2: {fileID: 0}
 --- !u!58 &5298011677439662134
