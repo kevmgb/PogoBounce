@@ -24,6 +24,7 @@ public class characterController : MonoBehaviour
         if (isGrounded == true)
         {
             Jump();
+            Debug.Log("Player is grounded");
         }
 
         // Smoothly tilts a transform towards a target rotation.
