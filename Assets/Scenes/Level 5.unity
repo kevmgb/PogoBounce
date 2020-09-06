@@ -3039,6 +3039,22 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 4039011626216236560}
+    - target: {fileID: 7953092973037655259, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.017568827
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953092973037655259, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.022947244
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953092973037655259, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1826737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953092973037655259, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
+      propertyPath: m_Size.y
+      value: 0.0147238225
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5809260128152815765, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}

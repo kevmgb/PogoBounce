@@ -15,7 +15,7 @@ public class characterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -46,5 +46,6 @@ public class characterController : MonoBehaviour
         rb2D.AddForce(transform.up * jumpingForce * Time.deltaTime, ForceMode2D.Impulse);
         // rb2D.velocity = new Vector3(0, jumpingForce, 0);
         isGrounded = false;
+        Debug.Log("Applying upwards force");
     }
 }
