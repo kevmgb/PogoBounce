@@ -43,8 +43,8 @@ public class pauseMenu : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void QuitGame()
+    public void RetryLevel()
     {
-        Application.Quit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
