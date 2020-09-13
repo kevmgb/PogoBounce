@@ -10,9 +10,9 @@ public class pauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    
+
     // Update is called once per frame
-   public void PauseGame()
+    public void PauseGame()
     {
         if (GameIsPaused)
         {
@@ -46,5 +46,10 @@ public class pauseMenu : MonoBehaviour
     public void RetryLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Mute()
+    {
+        FindObjectOfType<AudioManager>().Mute();
     }
 }

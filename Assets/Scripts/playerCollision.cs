@@ -21,7 +21,7 @@ public class playerCollision : MonoBehaviour
                 PlayerPrefs.SetInt("levelAt", nextScene);
             }
             // End // 
-
+            FindObjectOfType<AudioManager>().Play("playerWin");
             FindObjectOfType<gameManager>().LevelComplete();
         }
     }
@@ -31,6 +31,7 @@ public class playerCollision : MonoBehaviour
         if (collision.gameObject.tag == "Lethal")
         {
             movement.enabled = false;
+            FindObjectOfType<AudioManager>().Play("playerLose");
             Debug.Log("You hit a lethal object");
             FindObjectOfType<gameManager>().EndGame();
         }

@@ -23,6 +23,7 @@ public class characterController : MonoBehaviour
     {
         if (isGrounded == true)
         {
+            FindObjectOfType<AudioManager>().Play("playerBounce");
             Jump();
             Debug.Log("Player is grounded");
         }

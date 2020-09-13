@@ -27,6 +27,7 @@ public class gameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
+            
             Debug.Log("DEAD");
             Invoke("EndGameDelay", restartDelay);
 
@@ -38,6 +39,7 @@ public class gameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
+            
             Debug.Log("LEVEL COMPLETE");
             Invoke("CompleteLevel", restartDelay);
         }
