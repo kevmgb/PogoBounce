@@ -18,7 +18,7 @@ public class Distance : MonoBehaviour
         
         distance_to_exit = Mathf.Round(distance_to_exit);
 
-        distanceText.text = ("Distance: " + distance_to_exit.ToString() + " m");
+        distanceText.text = (" " + distance_to_exit.ToString() + " m");
 
     }
 }
