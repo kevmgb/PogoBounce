@@ -23,6 +23,7 @@ public class playerCollision : MonoBehaviour
             // End // 
             FindObjectOfType<AudioManager>().Play("playerWin");
             FindObjectOfType<gameManager>().LevelComplete();
+            Debug.Log("Showed level complete ui");
         }
     }
 
@@ -31,9 +32,10 @@ public class playerCollision : MonoBehaviour
         if (collision.gameObject.tag == "Lethal")
         {
             movement.enabled = false;
-            FindObjectOfType<AudioManager>().Play("playerLose");
+            //FindObjectOfType<AudioManager>().Play("playerLose");
             Debug.Log("You hit a lethal object");
             FindObjectOfType<gameManager>().EndGame();
+            Debug.Log("Showed game over ui");
         }
     }
 }

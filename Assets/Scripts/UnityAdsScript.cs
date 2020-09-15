@@ -9,6 +9,8 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
     string GooglePlay_ID = "3823141";
     bool TestMode = true;
 
+    public RespawnPlayer respawn;
+
     string myPlacementId = "rewardedVideo";
 
     // Start is called before the first frame update
@@ -19,11 +21,7 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
     }
 
     // Update is called once per frame
-    public void DisplayInterstitialAds()
-    {
-        Advertisement.Show();
-    }
-
+    
     public void DisplayVideoAd()
     {
         Advertisement.Show(myPlacementId);
@@ -35,7 +33,7 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
-
+            respawn.RespawnPlayerFunc();
             Debug.Log("The player watched an ad, give them a reward.");
 
         }

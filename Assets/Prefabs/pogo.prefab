@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5964747265388590512}
   - component: {fileID: 5964747265388590519}
   - component: {fileID: 7766018968431620936}
+  - component: {fileID: 853262852351052550}
   m_Layer: 0
   m_Name: pogo
   m_TagString: Untagged
@@ -251,6 +252,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &853262852351052550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964747265388590513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ed621e32371f4b924eede1b124606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7641958454096506031
 GameObject:
   m_ObjectHideFlags: 0
