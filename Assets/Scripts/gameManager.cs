@@ -6,7 +6,7 @@ public class gameManager : MonoBehaviour
     public bool gameHasEnded = false;
     public float restartDelay = 2f;
 
-    static int playAttempts;
+    // static int playAttempts;
 
     public GameObject completeLevelUI;
 
@@ -14,17 +14,18 @@ public class gameManager : MonoBehaviour
 
     public characterController player;
 
-    public InterstitialAds adsOnRestart;
+    // public InterstitialAds adsOnRestart;
 
     public void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
-        playAttempts++;
-        if (playAttempts == 5)
-        {
+
+        // playAttempts++;
+        // if (playAttempts == 5)
+        // {
             //adsOnRestart.DisplayInterstitialAds();
-            playAttempts = 0;
-        }
+            // playAttempts = 0;
+        // }
     }
 
     void EndGameDelay()

@@ -10,9 +10,9 @@ public class pauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    static int restartAttempts;
+    //static int restartAttempts;
 
-    public InterstitialAds adsOnRestart;
+    //public InterstitialAds adsOnRestart;
 
     // Update is called once per frame
     public void PauseGame()
@@ -48,12 +48,6 @@ public class pauseMenu : MonoBehaviour
 
     public void RetryLevel()
     {
-        restartAttempts++;
-        if (restartAttempts == 5)
-        {
-            //adsOnRestart.DisplayInterstitialAds();
-            restartAttempts = 0;
-        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
