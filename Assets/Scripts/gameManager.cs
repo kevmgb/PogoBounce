@@ -22,7 +22,7 @@ public class gameManager : MonoBehaviour
         playAttempts++;
         if (playAttempts == 5)
         {
-            adsOnRestart.DisplayInterstitialAds();
+            //adsOnRestart.DisplayInterstitialAds();
             playAttempts = 0;
         }
     }

@@ -51,7 +51,7 @@ public class pauseMenu : MonoBehaviour
         restartAttempts++;
         if (restartAttempts == 5)
         {
-            adsOnRestart.DisplayInterstitialAds();
+            //adsOnRestart.DisplayInterstitialAds();
             restartAttempts = 0;
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
