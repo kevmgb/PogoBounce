@@ -14,6 +14,10 @@ public class gameManager : MonoBehaviour
 
     public characterController player;
 
+    public CheckPoint checkPoint;
+
+    public GameObject watchAdButton;
+
     // public InterstitialAds adsOnRestart;
 
     public void CompleteLevel()
@@ -30,7 +34,20 @@ public class gameManager : MonoBehaviour
 
     void EndGameDelay()
     {
-        gameOverUI.SetActive(true);
+        
+
+        if (checkPoint.firstCheckPointReached != true)
+        {
+            Debug.Log("No checkpoint was activated, disable watch ads button");
+            gameOverUI.SetActive(true);
+            watchAdButton.SetActive(false);
+        } else
+        {
+            Debug.Log("Player reached atleast one checkpoint, show ad button");
+            gameOverUI.SetActive(true);
+        }
+
+        // Check if first checkpoint was reached, if not disable rewarded ads button.
     }
 
     public void EndGame()

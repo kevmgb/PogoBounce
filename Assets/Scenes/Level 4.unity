@@ -2124,6 +2124,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 677089173317722402, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
   m_PrefabInstance: {fileID: 4039011626216236559}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4039011626216236565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4363195603805062463, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4039011626216236559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2195,6 +2200,14 @@ PrefabInstance:
       propertyPath: checkpointReachedUI
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: checkPoint
+      value: 
+      objectReference: {fileID: 1611350588}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: watchAdButton
+      value: 
+      objectReference: {fileID: 4039011626216236565}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager

@@ -12,6 +12,8 @@ public class CheckPoint : MonoBehaviour
 
     public GameObject gameOverUI;
 
+    public bool firstCheckPointReached; // disable respawn button if no checkpoint was reached
+
     #region Public Variables
 
     /// <summary>
@@ -101,6 +103,7 @@ public class CheckPoint : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Player touches checkpoint board");
+            firstCheckPointReached = true;
             ActivateCheckPoint();
         }
     }
