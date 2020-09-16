@@ -11,11 +11,13 @@ public class characterController : MonoBehaviour
     float smooth = 5.0f;
 
     public Joystick joystick;
+
+    //Vector2 initialPosition;
   
     // Start is called before the first frame update
     void Start()
     {
-       
+      
     }
 
     // Update is called once per frame

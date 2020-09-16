@@ -5,7 +5,6 @@ public class gameManager : MonoBehaviour
 {
     public bool gameHasEnded = false;
     public float restartDelay = 2f;
-    public float fadeCheckpointText = 2f;
 
     // static int playAttempts;
 
@@ -13,10 +12,7 @@ public class gameManager : MonoBehaviour
 
     public GameObject gameOverUI;
 
-    public GameObject checkpointReachedUI;
-
     public characterController player;
-
 
     // public InterstitialAds adsOnRestart;
 
@@ -65,18 +61,6 @@ public class gameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
-    }
-
-    public void CheckPointReached()
-    {
-        checkpointReachedUI.SetActive(true);
-        Debug.Log("Checkpoint Reached");
-        Invoke("CheckpointReachedCloseMsg", fadeCheckpointText);
-    }
-
-    public void CheckpointReachedCloseMsg()
-    {
-        checkpointReachedUI.SetActive(false);
     }
 
 }

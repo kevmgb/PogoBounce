@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    public Rigidbody2D pogoPlayer;
-    public GameObject player;
+    GameObject player;
 
-    private Vector2 boardSpawn;
+    Vector2 boardspawn;
+
+    public gameManager manager;
+
+    public GameObject gameOverUI;
+
     #region Public Variables
 
     /// <summary>
@@ -78,6 +82,8 @@ public class CheckPoint : MonoBehaviour
 
         // We activated the current checkpoint
         Activated = true;
+
+        //TODO: Animate the checkpoint board with something like a tick
     }
 
     #endregion
@@ -103,12 +109,15 @@ public class CheckPoint : MonoBehaviour
     {
         Debug.Log("Begin Respawn");
 
-        boardSpawn = GetActiveCheckPointPosition();
-        Debug.Log("Board Spawn: " + boardSpawn);
-        pogoPlayer.MovePosition(boardSpawn);
-        //player.GetComponent<characterController>().enabled = true;
-        //manager.gameHasEnded = false;
-        //gameOverUI.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        boardspawn = GetActiveCheckPointPosition();
+        Debug.Log("board spawn: " + boardspawn);
+        player.GetComponent<Rigidbody2D>().MovePosition(boardspawn);
+
+        player.GetComponent<characterController>().enabled = true;
+        manager.gameHasEnded = false;
+        gameOverUI.SetActive(false);
         Debug.Log("Player has respawned");
     }
 

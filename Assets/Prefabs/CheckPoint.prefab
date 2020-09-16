@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 15}
+  m_Size: {x: 1, y: 15}
   m_EdgeRadius: 0
 --- !u!212 &7372886704483750212
 SpriteRenderer:
@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02ecd2fe3a1f4e4a98ad3069d6bc951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pogoPlayer: {fileID: 5815058678875832447, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
-  player: {fileID: 5964747265388590513, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
+  manager: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+  gameOverUI: {fileID: 0}
+  checkpointReachedUI: {fileID: 0}
+  fadeCheckpointText: 1
   Activated: 0
