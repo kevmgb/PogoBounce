@@ -12,6 +12,7 @@ TagManager:
   - CanJump
   - Spring
   - SpawnPoint
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

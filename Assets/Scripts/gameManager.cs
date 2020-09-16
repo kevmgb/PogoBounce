@@ -17,6 +17,7 @@ public class gameManager : MonoBehaviour
 
     public characterController player;
 
+
     // public InterstitialAds adsOnRestart;
 
     public void CompleteLevel()

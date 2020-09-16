@@ -1084,7 +1084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 834450257523933366, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.81
+      value: 10.15
       objectReference: {fileID: 0}
     - target: {fileID: 834450257523933366, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1134,6 +1134,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 1958622955112861211, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
+      propertyPath: pogoPlayer
+      value: 
+      objectReference: {fileID: 5964747265387182154}
+    - target: {fileID: 1958622955112861211, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5964747265387182155}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
 --- !u!4 &780719203 stripped
@@ -2110,6 +2118,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1979180095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750217, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_Name
+      value: CheckPoint (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: pogoPlayer
+      value: 
+      objectReference: {fileID: 5964747265387182154}
+    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5964747265387182155}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
 --- !u!4 &2049161840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2935335965406447691, guid: 856f5ce72cf8aae438fca0561a1d2ad8, type: 3}
@@ -2840,6 +2913,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f109c8446c602fd4e89868c0e08eb59b, type: 3}
+--- !u!1001 &7372886703070508926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372886704483750217, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: m_Name
+      value: CheckPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: pogoPlayer
+      value: 
+      objectReference: {fileID: 5964747265387182154}
+    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5964747265387182155}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
 --- !u!1001 &7880831644625524911
 PrefabInstance:
   m_ObjectHideFlags: 0
