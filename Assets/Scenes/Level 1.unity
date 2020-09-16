@@ -2172,17 +2172,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c07939053bcd446b004ed94fed4a04, type: 3}
---- !u!114 &2132970351 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7744080264226890902, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
-  m_PrefabInstance: {fileID: 4049489144447386547}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2b3ae770a68a8489d09793102b919e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &683705167922929370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2365,6 +2354,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558300037120328371, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 558300037120328371, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 677089173317722402, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1344454233487341053, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: exit
       value: 
@@ -2373,6 +2374,10 @@ PrefabInstance:
       propertyPath: distanceText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1876768493753671979, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: LevelNumberUI
+      value: 
+      objectReference: {fileID: 4049489144447386551}
     - target: {fileID: 2342209634110154519, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_ScreenMatchMode
       value: 0
@@ -2401,6 +2406,10 @@ PrefabInstance:
       propertyPath: exit
       value: 
       objectReference: {fileID: 2049161840}
+    - target: {fileID: 3921783240769818138, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4497445909737752123, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.5
@@ -2596,6 +2605,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4049489144447386551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 677089173317722402, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4049489144447386547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2666,7 +2680,7 @@ PrefabInstance:
     - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: adsOnPlay
       value: 
-      objectReference: {fileID: 2132970351}
+      objectReference: {fileID: 0}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager

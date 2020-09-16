@@ -1518,6 +1518,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1876768493753671979, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: LevelNumberUI
+      value: 
+      objectReference: {fileID: 4039011626216236564}
     - target: {fileID: 4039011625759336609, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: player
       value: 
@@ -1692,17 +1696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4039011626216236564 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7744080264226890902, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+--- !u!1 &4039011626216236564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 677089173317722402, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
   m_PrefabInstance: {fileID: 4039011626216236559}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2b3ae770a68a8489d09793102b919e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1777,7 +1775,7 @@ PrefabInstance:
     - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: adsOnPlay
       value: 
-      objectReference: {fileID: 4039011626216236564}
+      objectReference: {fileID: 0}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager

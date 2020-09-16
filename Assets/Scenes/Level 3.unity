@@ -1553,6 +1553,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1876768493753671979, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: LevelNumberUI
+      value: 
+      objectReference: {fileID: 4039011626216236565}
     - target: {fileID: 4039011625759336609, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: player
       value: 
@@ -1762,6 +1766,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d07fe6dbb1522349baa653427e26a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4039011626216236565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 677089173317722402, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4039011626216236559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
