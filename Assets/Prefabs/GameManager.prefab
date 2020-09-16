@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameHasEnded: 0
   restartDelay: 1
-  levelIndicatorWait: 2
+  fadeCheckpointText: 2
   completeLevelUI: {fileID: 0}
   gameOverUI: {fileID: 0}
+  checkpointReachedUI: {fileID: 4077477416563117833, guid: 8e68152e44a143a4c9e770aca53a600b, type: 3}
   player: {fileID: 0}
-  LevelNumberUI: {fileID: 215830513152794322, guid: 789056311378d2b4ca5b8bc0517ae7a4, type: 3}

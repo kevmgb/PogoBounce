@@ -493,7 +493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 834450257523933366, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.456331
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 834450257523933366, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1388,7 +1388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 834450257523933366, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.456331
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 834450257523933366, guid: b80a6eea5e7d28b4c95ee8865647473f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1771,6 +1771,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 677089173317722402, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
   m_PrefabInstance: {fileID: 4039011626216236559}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4039011626216236566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7282392142045069989, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4039011626216236559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1838,6 +1843,10 @@ PrefabInstance:
       propertyPath: adsOnPlay
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: checkpointReachedUI
+      value: 
+      objectReference: {fileID: 4039011626216236566}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager

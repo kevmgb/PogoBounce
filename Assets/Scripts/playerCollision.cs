@@ -7,6 +7,9 @@ public class playerCollision : MonoBehaviour
 
     int nextScene;
 
+    bool checkPoint_triggered;
+    bool checkPoint_soundPlay;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "finish")
@@ -25,6 +28,35 @@ public class playerCollision : MonoBehaviour
             FindObjectOfType<gameManager>().LevelComplete();
             Debug.Log("Showed level complete ui");
         }
+
+        if (other.gameObject.tag == "SpawnPoint")
+        {
+            if (checkPoint_triggered == false)
+            {
+                checkPoint_triggered = true;
+                FindObjectOfType<gameManager>().CheckPointReached();
+                Debug.Log("Showed checkpoint activated ui");
+            }
+            else
+            {
+                // checkPoint_triggered = false;
+                Debug.Log("Checkpoint already triggered.");
+            }
+
+            if (checkPoint_soundPlay == false)
+            {
+                checkPoint_soundPlay = true;
+                FindObjectOfType<AudioManager>().Play("checkpointSound");
+            }
+            else
+            {
+                // checkPoint_soundPlay = false;
+                Debug.Log("Checkpoint sound already played");
+            }
+           
+            
+            
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -38,4 +70,5 @@ public class playerCollision : MonoBehaviour
             Debug.Log("Showed game over ui");
         }
     }
+
 }

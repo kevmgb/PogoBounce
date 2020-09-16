@@ -5,12 +5,15 @@ public class gameManager : MonoBehaviour
 {
     public bool gameHasEnded = false;
     public float restartDelay = 2f;
+    public float fadeCheckpointText = 2f;
 
     // static int playAttempts;
 
     public GameObject completeLevelUI;
 
     public GameObject gameOverUI;
+
+    public GameObject checkpointReachedUI;
 
     public characterController player;
 
@@ -63,6 +66,16 @@ public class gameManager : MonoBehaviour
         
     }
 
-    
+    public void CheckPointReached()
+    {
+        checkpointReachedUI.SetActive(true);
+        Debug.Log("Checkpoint Reached");
+        Invoke("CheckpointReachedCloseMsg", fadeCheckpointText);
+    }
+
+    public void CheckpointReachedCloseMsg()
+    {
+        checkpointReachedUI.SetActive(false);
+    }
 
 }
