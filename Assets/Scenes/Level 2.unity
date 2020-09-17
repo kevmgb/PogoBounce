@@ -550,6 +550,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1682552689}
+    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
+      propertyPath: checkPointUI
+      value: 
+      objectReference: {fileID: 4039011626216236568}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
 --- !u!114 &1478586208 stripped
@@ -1171,11 +1175,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 683705167900616282, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -63.73
+      value: -59.73
       objectReference: {fileID: 0}
     - target: {fileID: 683705167900616282, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 683705167900616282, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1541,7 +1545,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4039011626216236565 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4363195603805062463, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7328244820528526353, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
   m_PrefabInstance: {fileID: 4039011626216236559}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &4039011626216236566 stripped
@@ -1566,6 +1570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d07fe6dbb1522349baa653427e26a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4039011626216236568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5076705662391856548, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4039011626216236559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1859,11 +1868,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8128749621464465732, guid: 6404bd07e0bad5b4dad8042f867fcb2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -63.73
+      value: -59.73
       objectReference: {fileID: 0}
     - target: {fileID: 8128749621464465732, guid: 6404bd07e0bad5b4dad8042f867fcb2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8128749621464465732, guid: 6404bd07e0bad5b4dad8042f867fcb2d, type: 3}
       propertyPath: m_LocalPosition.z

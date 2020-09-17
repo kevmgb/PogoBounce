@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
   gameOverUI: {fileID: 0}
-  checkpointReachedUI: {fileID: 0}
-  fadeCheckpointText: 1
+  firstCheckPointReached: 0
+  reachedCheckpoint: 0
+  checkPointUI: {fileID: 5605038376737502283, guid: db2e6ace79785aa43a879b600e91bfd6, type: 3}
   Activated: 0

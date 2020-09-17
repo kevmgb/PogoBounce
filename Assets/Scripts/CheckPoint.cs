@@ -14,6 +14,12 @@ public class CheckPoint : MonoBehaviour
 
     public bool firstCheckPointReached; // disable respawn button if no checkpoint was reached
 
+    public bool reachedCheckpoint;
+
+    public GameObject checkPointUI;
+
+    public float checkPointUIDelay = 2f;
+
     #region Public Variables
 
     /// <summary>
@@ -84,8 +90,24 @@ public class CheckPoint : MonoBehaviour
 
         // We activated the current checkpoint
         Activated = true;
+        
+        if (reachedCheckpoint == false)
+        {
+            checkPointUI.SetActive(true);
+            Debug.Log("SHOW CHECKPOINT REACHED UI");
+            FindObjectOfType<AudioManager>().Play("checkpointSound");
+            Debug.Log("PLAYED CHECKPOINT REACH SOUND");
+            Invoke("checkPointUIDisable", checkPointUIDelay);
+            reachedCheckpoint = true;
+        }
 
         //TODO: Animate the checkpoint board with something like a tick
+    }
+
+    public void checkPointUIDisable()
+    {
+        checkPointUI.SetActive(false);
+        Debug.Log("DISABLE CHECKPOINT REACHED UI");
     }
 
     #endregion

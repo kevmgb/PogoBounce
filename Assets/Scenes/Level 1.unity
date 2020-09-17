@@ -439,6 +439,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &141946223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5076705662391856548, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4049489144447386547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &173095956
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,11 +640,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c07939053bcd446b004ed94fed4a04, type: 3}
---- !u!1 &556160355 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4363195603805062463, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
-  m_PrefabInstance: {fileID: 4049489144447386547}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &617076661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +1999,8 @@ MonoBehaviour:
   manager: {fileID: 4109892316553327404}
   gameOverUI: {fileID: 4049489144447386548}
   firstCheckPointReached: 0
+  reachedCheckpoint: 0
+  checkPointUI: {fileID: 141946223}
   Activated: 0
 --- !u!1 &1912967948
 GameObject:
@@ -2792,6 +2794,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2b3ae770a68a8489d09793102b919e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4049489144447386554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7328244820528526353, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4049489144447386547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2874,7 +2881,7 @@ PrefabInstance:
     - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: watchAdButton
       value: 
-      objectReference: {fileID: 556160355}
+      objectReference: {fileID: 4049489144447386554}
     - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: adsOnRestart
       value: 

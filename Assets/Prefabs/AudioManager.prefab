@@ -61,6 +61,6 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: checkpointSound
     clip: {fileID: 8300000, guid: 3f57f346353c74245a57e823687e978d, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
