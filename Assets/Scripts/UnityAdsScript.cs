@@ -13,6 +13,8 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
 
     string myPlacementId = "rewardedVideo";
 
+    string interstitialAd = "video";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,31 +23,57 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
     }
 
     // Update is called once per frame
-    
+
+
+    public void DisplayInterstitialAds()
+    {
+        // Check if UnityAds ready before calling Show method:
+        if (Advertisement.IsReady(interstitialAd))
+        {
+            Advertisement.Show(interstitialAd);
+            Debug.Log("Displaying interstitial ad");
+        }
+        else
+        {
+            Debug.Log("Interstitial ad not ready at the moment! Please try again later!");
+        }
+    }
+
     public void DisplayVideoAd()
     {
-        Advertisement.Show(myPlacementId);
+        // Check if UnityAds ready before calling Show method:
+        if (Advertisement.IsReady(myPlacementId))
+        {
+            Advertisement.Show(myPlacementId);
+        }
+        else
+        {
+            Debug.Log("Rewarded video is not ready at the moment! Please try again later!");
+        }
     }
     // Implement IUnityAdsListener interface methods:
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
-        // Define conditional logic for each ad completion status:
-        if (showResult == ShowResult.Finished)
+        if (placementId == myPlacementId)
         {
-            // Reward the user for watching the ad to completion.
-            respawn.RespawnPlayerFunc();
-            Debug.Log("The player watched an ad, give them a reward.");
+            // Define conditional logic for each ad completion status:
+            if (showResult == ShowResult.Finished)
+            {
+                // Reward the user for watching the ad to completion.
+                respawn.RespawnPlayerFunc();
+                Debug.Log("The player watched an ad, give them a reward.");
 
-        }
-        else if (showResult == ShowResult.Skipped)
-        {
-            // Do not reward the user for skipping the ad.
-            Debug.Log("The player skipped the ad.");
+            }
+            else if (showResult == ShowResult.Skipped)
+            {
+                // Do not reward the user for skipping the ad.
+                Debug.Log("The player skipped the ad.");
 
-        }
-        else if (showResult == ShowResult.Failed)
-        {
-            Debug.LogWarning("The ad did not finish due to an error.");
+            }
+            else if (showResult == ShowResult.Failed)
+            {
+                Debug.LogWarning("The ad did not finish due to an error.");
+            }
         }
     }
 

@@ -1945,6 +1945,10 @@ PrefabInstance:
       propertyPath: LevelNumberUI
       value: 
       objectReference: {fileID: 4039011626216236564}
+    - target: {fileID: 2409376086904980332, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: adsOnRestart
+      value: 
+      objectReference: {fileID: 4039011626216236566}
     - target: {fileID: 4039011625759336609, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: player
       value: 
@@ -2085,6 +2089,10 @@ PrefabInstance:
       propertyPath: checkPoint
       value: 
       objectReference: {fileID: 1611350588}
+    - target: {fileID: 8973512163767106362, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 4039011626216236567}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
 --- !u!114 &4039011626216236560 stripped
@@ -2129,6 +2137,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4363195603805062463, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
   m_PrefabInstance: {fileID: 4039011626216236559}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4039011626216236566 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3900666536375865747, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4039011626216236559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2b3ae770a68a8489d09793102b919e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4039011626216236567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8812569898934057259, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 4039011626216236559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d07fe6dbb1522349baa653427e26a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4109892316553327403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2208,6 +2238,10 @@ PrefabInstance:
       propertyPath: watchAdButton
       value: 
       objectReference: {fileID: 4039011626216236565}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: adsOnRestart
+      value: 
+      objectReference: {fileID: 4039011626216236566}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager
