@@ -19,6 +19,6 @@ public class LevelIndicator : MonoBehaviour
     void displayLevelName()
     {
         levelNum = SceneManager.GetActiveScene().buildIndex - 2;
-        levelName.text = ("level " + levelNum.ToString());
+        levelName.text = ("LEVEL " + levelNum.ToString() + " COMPLETE!");
     }
 }
