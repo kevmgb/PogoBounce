@@ -25,7 +25,7 @@ public class gameManager : MonoBehaviour
         completeLevelUI.SetActive(true);
 
         playAttempts++;
-        if (playAttempts == 2)
+        if (playAttempts == 10)
         {
             adsOnRestart.DisplayInterstitialAds();
             playAttempts = 0;

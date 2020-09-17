@@ -6,7 +6,9 @@ public class RespawnPlayer : MonoBehaviour
 {
     public CheckPoint checkPoint;
 
-    public void RespawnPlayerFunc ()
+    public float respawnDelay = 2f;
+
+    public void RespawnPlayerFuncDelayed ()
     {
         Debug.Log("Begin Respawn");
         //nearestSpawnPoint = pogoPlayer.GetComponent<FindNearestSpawnPoint>().FindClosestSpawnPoint();
@@ -19,6 +21,12 @@ public class RespawnPlayer : MonoBehaviour
         //Debug.Log("Player has respawned");
 
         checkPoint.RespawnPlayerToBoard();
+    }
+
+    public void RespawnPlayerFunc()
+    {
+        Invoke("RespawnPlayerFuncDelayed", respawnDelay);
+        Debug.Log("Delay player respawn a little ...");
     }
     
 }
