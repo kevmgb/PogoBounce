@@ -264,77 +264,8 @@ Transform:
   m_Children:
   - {fileID: 1529041771}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1124436888
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -73.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750215, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7372886704483750217, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: m_Name
-      value: CheckPoint (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 4109892316553327404}
-    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: gameOverUI
-      value: 
-      objectReference: {fileID: 2109275033}
-    - target: {fileID: 7618587718898268340, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
-      propertyPath: checkPointUI
-      value: 
-      objectReference: {fileID: 2109275040}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4639bbfb628cbae48a7673207788ef66, type: 3}
 --- !u!1001 &1516349347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17927,11 +17858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7569613216194256782, guid: cbeaaa075b40dc547a29029b1d1b062d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.97172
+      value: -48.98
       objectReference: {fileID: 0}
     - target: {fileID: 7569613216194256782, guid: cbeaaa075b40dc547a29029b1d1b062d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.028982
+      value: -2.82
       objectReference: {fileID: 0}
     - target: {fileID: 7569613216194256782, guid: cbeaaa075b40dc547a29029b1d1b062d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18028,15 +17959,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683705167900616357, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.42078337
+      value: 0.3529412
       objectReference: {fileID: 0}
     - target: {fileID: 683705167900616357, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.3488341
+      value: 0.25490198
       objectReference: {fileID: 0}
     - target: {fileID: 683705167900616357, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.6320754
+      value: 0.36862746
       objectReference: {fileID: 0}
     - target: {fileID: 683705167900616357, guid: 4fb32667a4062c54281c93bd640669a9, type: 3}
       propertyPath: m_BackGroundColor.a
