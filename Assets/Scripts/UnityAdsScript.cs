@@ -104,9 +104,11 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
         Debug.Log("Ad is now playing");
     }
 
-    //// When the object that subscribes to ad events is destroyed, remove the listener:
-    //public void OnDestroy()
-    //{
-    //    Advertisement.RemoveListener(this);
-    //}
+    // When the object that subscribes to ad events is destroyed, remove the listener:
+
+    // COmmenting this out is what caused the game over ui to not be disable in next level
+    public void OnDestroy()
+    {
+        Advertisement.RemoveListener(this);
+    }
 }
