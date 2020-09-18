@@ -127,4 +127,5 @@ MonoBehaviour:
   firstCheckPointReached: 0
   reachedCheckpoint: 0
   checkPointUI: {fileID: 5605038376737502283, guid: db2e6ace79785aa43a879b600e91bfd6, type: 3}
+  checkPointUIDelay: 2
   Activated: 0

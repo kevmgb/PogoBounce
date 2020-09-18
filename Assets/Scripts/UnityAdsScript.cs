@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.UI;
 
 public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
 {
@@ -20,6 +22,9 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
     {
         Advertisement.AddListener(this);
         Advertisement.Initialize(GooglePlay_ID, TestMode);
+
+        //Check if ads are ready and return bool
+        OnUnityAdsReady(myPlacementId);
     }
 
     // Update is called once per frame
@@ -83,22 +88,25 @@ public class UnityAdsScript : MonoBehaviour, IUnityAdsListener
         if (placementId == myPlacementId)
         {
             // Optional actions to take when the placement becomes ready(For example, enable the rewarded ads button)
+            Debug.LogWarning("Ad is ready to play");
         }
     }
 
     public void OnUnityAdsDidError(string message)
     {
         // Log the error.
+        Debug.LogWarning("Error fetching ads");
     }
 
     public void OnUnityAdsDidStart(string placementId)
     {
         // Optional actions to take when the end-users triggers an ad.
+        Debug.Log("Ad is now playing");
     }
 
-    // When the object that subscribes to ad events is destroyed, remove the listener:
-    public void OnDestroy()
-    {
-        Advertisement.RemoveListener(this);
-    }
+    //// When the object that subscribes to ad events is destroyed, remove the listener:
+    //public void OnDestroy()
+    //{
+    //    Advertisement.RemoveListener(this);
+    //}
 }

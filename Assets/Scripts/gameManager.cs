@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class gameManager : MonoBehaviour
 {
@@ -43,10 +44,9 @@ public class gameManager : MonoBehaviour
             watchAdButton.SetActive(false);
         } else
         {
-            Debug.Log("Player reached atleast one checkpoint, show ad button");
+            Debug.Log("Player reached atleast one checkpoint, show ads button");
             gameOverUI.SetActive(true);
         }
-
         // Check if first checkpoint was reached, if not disable rewarded ads button.
     }
 
