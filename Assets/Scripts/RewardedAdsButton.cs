@@ -8,7 +8,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     private string GooglePlay_ID = "3823141";
 
     Button myButton;
-    private string myPlacementId = "rewardedVideo";
+    private string myPlacementId = "video";
     bool TestMode = true;
 
     public RespawnPlayer respawn;
@@ -56,6 +56,9 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         else if (showResult == ShowResult.Skipped)
         {
             // Do not reward the user for skipping the ad.
+
+            respawn.RespawnPlayerFunc();
+            Debug.Log("The player skipped the ad, give them reward (Still deciding).");
         }
         else if (showResult == ShowResult.Failed)
         {

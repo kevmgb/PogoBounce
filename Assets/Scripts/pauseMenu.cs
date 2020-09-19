@@ -48,6 +48,9 @@ public class pauseMenu : MonoBehaviour
 
     public void RetryLevel()
     {
+        // Game was freezing on restart because time scale hasnt been changed back to 1
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
         restartAttempts++;
