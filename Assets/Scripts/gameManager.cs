@@ -21,6 +21,8 @@ public class gameManager : MonoBehaviour
 
     public UnityAdsScript adsOnRestart;
 
+    public GameObject pauseMenuUI;
+
     public void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
@@ -79,6 +81,22 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
+    }
+
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (focus)
+        {
+            Debug.Log("Game is in focus");
+            return; 
+        }
+        else
+        {
+            Debug.Log("game is out of focus");
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
 
 }

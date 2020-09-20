@@ -4642,6 +4642,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2109275042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8424776140956209182, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 2109275031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118342243
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,6 +5136,10 @@ PrefabInstance:
       propertyPath: adsOnRestart
       value: 
       objectReference: {fileID: 2109275038}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 2109275042}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager
