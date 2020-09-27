@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Distance : MonoBehaviour
@@ -8,9 +9,10 @@ public class Distance : MonoBehaviour
     public Transform exit;
 
     public float distance_to_exit;
-    public Text distanceText;
+    //public Text distanceText;
 
- 
+    public TextMeshProUGUI distanceText;
+
     // Update is called once per frame
     void Update()
     {

@@ -14,6 +14,7 @@ public class LevelIndicator : MonoBehaviour
     void Start()
     {
         displayLevelName();
+
     }
 
     void displayLevelName()
