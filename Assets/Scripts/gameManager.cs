@@ -26,7 +26,7 @@ public class gameManager : MonoBehaviour
     public void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
-
+        Time.timeScale = 0f;
         playAttempts++;
         if (playAttempts == 5)
         {
@@ -37,8 +37,8 @@ public class gameManager : MonoBehaviour
 
     void EndGameDelay()
     {
-        
 
+        Time.timeScale = 0f;
         if (checkPoint.firstCheckPointReached != true)
         {
             Debug.Log("No checkpoint was activated, disable watch ads button");
@@ -84,19 +84,19 @@ public class gameManager : MonoBehaviour
     }
 
 
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            Debug.Log("Game is in focus");
-            return; 
-        }
-        else
-        {
-            Debug.Log("game is out of focus");
-            pauseMenuUI.SetActive(true);
-            Time.timeScale = 0f;
-        }
-    }
+    //private void OnApplicationFocus(bool focus)
+    //{
+    //    if (focus)
+    //    {
+    //        Debug.Log("Game is in focus");
+    //        return; 
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("game is out of focus");
+    //        pauseMenuUI.SetActive(true);
+    //        Time.timeScale = 0f;
+    //    }
+    //}
 
 }

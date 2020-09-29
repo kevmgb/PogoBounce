@@ -8,7 +8,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     private string GooglePlay_ID = "3823141";
 
     Button myButton;
-    private string myPlacementId = "video";
+    private string myPlacementId = "rewardedVideo";
     bool TestMode = true;
 
     public RespawnPlayer respawn;

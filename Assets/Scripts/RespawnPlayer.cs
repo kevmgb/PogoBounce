@@ -11,6 +11,7 @@ public class RespawnPlayer : MonoBehaviour
     public void RespawnPlayerFunc()
     {
         Debug.Log("Begin Respawn");
+        Time.timeScale = 1f;
         //nearestSpawnPoint = pogoPlayer.GetComponent<FindNearestSpawnPoint>().FindClosestSpawnPoint();
         //Debug.Log(nearestSpawnPoint.GetComponent<Transform>().position);
 
