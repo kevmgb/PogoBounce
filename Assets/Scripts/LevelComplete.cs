@@ -8,6 +8,7 @@ public class LevelComplete : MonoBehaviour
     {
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextScene);
+        Time.timeScale = 1f;
     }
 
     public void RetryLevel()
