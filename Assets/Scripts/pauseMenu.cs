@@ -74,9 +74,4 @@ public class pauseMenu : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Mute();
     }
-
-    public void Update()
-    {
-        Debug.LogWarning(gameManager.playAttempts);
-    }
 }
