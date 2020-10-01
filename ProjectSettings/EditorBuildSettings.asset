@@ -9,14 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/StudioName.unity
     guid: 49e5dfc0eb65b9a45ba8ea87dc6e34b3
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: d38f6594dcab3a2479acf8302df27c70
-  - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
-    guid: d2cb16b6c85bc0d4b8d3cb54f1cecc26
-  - enabled: 1
     path: Assets/Scenes/Level 1 E.unity
     guid: 98a5afe2ef5dfcf41844cf2c6df51233
+  - enabled: 1
+    path: Assets/Scenes/Level 25 H.unity
+    guid: c21b7bff31733e44786b9bddffc746dc
   - enabled: 1
     path: Assets/Scenes/Level 2 E.unity
     guid: c556d40c7352be241801e6184a0b78ea
@@ -74,6 +71,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 20 M.unity
     guid: 330ede115684f1c4faac7d4a09765615
+  - enabled: 1
+    path: Assets/Scenes/Level 21 E.unity
+    guid: f2a82c6e85d34b84386f81b4ee479cbb
+  - enabled: 1
+    path: Assets/Scenes/Level 22 H.unity
+    guid: 349275909be97004cab8b04174a16bdf
+  - enabled: 1
+    path: Assets/Scenes/Level 23 H.unity
+    guid: 74185f617709ce54eac122c8a1dca93a
+  - enabled: 1
+    path: Assets/Scenes/Level 24 H.unity
+    guid: d10b18085c65beb4ca9c751bda710adf
+  - enabled: 1
+    path: Assets/Scenes/Level 26 M reverse 19.unity
+    guid: 56816acb6b10f3b4484ed0859f84e0dd
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 645150c14c1c4d54d89aed616d119ea0
