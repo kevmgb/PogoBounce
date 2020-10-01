@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class levelSelect : MonoBehaviour
 {
-
     public Button[] lvlButtons;
 
     private void Start()
@@ -17,6 +16,7 @@ public class levelSelect : MonoBehaviour
                 lvlButtons[i].interactable = false;
         }
     }
+
     public void loadLevel1()
     {
         SceneManager.LoadScene("Level 1");
