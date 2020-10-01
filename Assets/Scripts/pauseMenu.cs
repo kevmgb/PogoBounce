@@ -9,8 +9,7 @@ public class pauseMenu : MonoBehaviour
     
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-
-    static int restartAttempts;
+    public static int restartAttempts;
 
     public UnityAdsScript adsOnRestart;
 
@@ -58,6 +57,15 @@ public class pauseMenu : MonoBehaviour
         {
             adsOnRestart.DisplayInterstitialAds();
             restartAttempts = 0;
+
+            
+            // Reset ad that plays after 5 levels to avoid another ad playing back to back
+            if (gameManager.playAttempts == 4)
+            {
+                gameManager.playAttempts -= 2;
+               
+            }
+
         }
         
     }
@@ -65,5 +73,10 @@ public class pauseMenu : MonoBehaviour
     public void Mute()
     {
         FindObjectOfType<AudioManager>().Mute();
+    }
+
+    public void Update()
+    {
+        Debug.LogWarning(gameManager.playAttempts);
     }
 }
