@@ -23,6 +23,10 @@ public class gameManager : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    public GameObject checkpointButton;
+
+    //public GameObject playerH;
+
     public void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
@@ -37,19 +41,28 @@ public class gameManager : MonoBehaviour
 
     void EndGameDelay()
     {
-
         Time.timeScale = 0f;
         if (checkPoint.firstCheckPointReached != true)
         {
             Debug.Log("No checkpoint was activated, disable watch ads button");
             gameOverUI.SetActive(true);
             watchAdButton.SetActive(false);
+            checkpointButton.SetActive(false);
         } else
         {
             Debug.Log("Player reached atleast one checkpoint, show ads button");
             gameOverUI.SetActive(true);
         }
         // Check if first checkpoint was reached, if not disable rewarded ads button.
+    }
+
+    void minusPlayerHealth()
+    {
+        GameObject playerH = GameObject.Find("pogo");
+
+        playerH.GetComponent<playerCollision>().health -= 1;
+
+        //playerH.GetComponent<playerCollision>().health -= 1;
     }
 
     public void EndGame()
@@ -59,6 +72,7 @@ public class gameManager : MonoBehaviour
             gameHasEnded = true;
             FindObjectOfType<AudioManager>().Play("playerLose");
             Debug.Log("DEAD");
+            minusPlayerHealth();
             Invoke("EndGameDelay", restartDelay);
 
         }

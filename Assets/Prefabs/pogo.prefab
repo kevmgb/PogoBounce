@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 5964747265388590515}
+  health: 2
 --- !u!82 &7766018968431620936
 AudioSource:
   m_ObjectHideFlags: 0

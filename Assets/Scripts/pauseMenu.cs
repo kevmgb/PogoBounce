@@ -11,6 +11,8 @@ public class pauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public static int restartAttempts;
 
+    public GameObject OOLivesUI;
+
     public UnityAdsScript adsOnRestart;
 
     // Update is called once per frame
@@ -73,5 +75,12 @@ public class pauseMenu : MonoBehaviour
     public void Mute()
     {
         FindObjectOfType<AudioManager>().Mute();
+    }
+
+
+    public void DisableOutOfLivesScreen()
+    {
+        OOLivesUI = GameObject.FindGameObjectWithTag("OOLives");
+        OOLivesUI.SetActive(false);
     }
 }

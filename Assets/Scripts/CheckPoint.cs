@@ -20,6 +20,13 @@ public class CheckPoint : MonoBehaviour
 
     public float checkPointUIDelay = 2f;
 
+    private GameObject pogoplayer;
+
+    public GameObject outOfLivesUI;
+
+    //public GameObject myCanvas;
+
+
     #region Public Variables
 
     /// <summary>
@@ -116,6 +123,7 @@ public class CheckPoint : MonoBehaviour
     {
         // We search all the checkpoints in the current scene
         CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
+
         
     }
 
@@ -133,17 +141,36 @@ public class CheckPoint : MonoBehaviour
     public void RespawnPlayerToBoard()
     {
         Debug.Log("Begin Respawn");
+        pogoplayer = GameObject.Find("pogo");
+        int playerHealth = pogoplayer.GetComponent<playerCollision>().health;
 
-        player = GameObject.FindGameObjectWithTag("Player");
+        if (playerHealth != 0)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
 
-        boardspawn = GetActiveCheckPointPosition();
-        Debug.Log("board spawn: " + boardspawn);
-        player.GetComponent<Rigidbody2D>().MovePosition(boardspawn);
+            boardspawn = GetActiveCheckPointPosition();
+            Debug.Log("board spawn: " + boardspawn);
+            player.GetComponent<Rigidbody2D>().MovePosition(boardspawn);
 
-        player.GetComponent<characterController>().enabled = true;
-        manager.gameHasEnded = false;
-        gameOverUI.SetActive(false);
-        Debug.Log("Player has respawned");
+            player.GetComponent<characterController>().enabled = true;
+            manager.gameHasEnded = false;
+            gameOverUI.SetActive(false);
+            Debug.Log("Player has respawned");
+        }
+        else
+        {
+            Debug.Log("Display out of ads screen");
+
+            //outOfLivesUI = Canvas.FindObject("OutOfLivesScreen");
+
+            // the proble is find with tag only finds active objects in scene
+
+           outOfLivesUI.SetActive(true);
+            
+            
+            Debug.Log("Out of lives");
+        }
+        
     }
 
 }

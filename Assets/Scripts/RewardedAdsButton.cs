@@ -13,6 +13,9 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
 
     public RespawnPlayer respawn;
 
+    public GameObject player;
+
+    public GameObject OOLivesUI;
     void Start()
     {
         myButton = GetComponent<Button>();
@@ -50,14 +53,35 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
-            respawn.RespawnPlayerFunc();
+            //respawn.RespawnPlayerFunc();
+
+            AddHealthReward();
+
+            OOLivesUI = GameObject.FindGameObjectWithTag("OOLives");
+
+            if (OOLivesUI != null)
+            {
+                OOLivesUI.SetActive(false);
+            }
+            
+
             Debug.Log("The player watched an ad, give them a reward.");
         }
         else if (showResult == ShowResult.Skipped)
         {
             // Do not reward the user for skipping the ad.
 
-            respawn.RespawnPlayerFunc();
+            AddHealthReward();
+
+            OOLivesUI = GameObject.FindGameObjectWithTag("OOLives");
+
+            if (OOLivesUI != null)
+            {
+                OOLivesUI.SetActive(false);
+            }
+
+
+            //respawn.RespawnPlayerFunc();
             Debug.Log("The player skipped the ad, give them reward (Still deciding).");
         }
         else if (showResult == ShowResult.Failed)
@@ -80,5 +104,11 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     public void OnDestroy()
     {
         Advertisement.RemoveListener(this);
+    }
+
+    void AddHealthReward()
+    {
+        GameObject player = GameObject.Find("pogo");
+        player.GetComponent<playerCollision>().health ++;
     }
 }

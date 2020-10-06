@@ -13,6 +13,8 @@ TagManager:
   - Spring
   - SpawnPoint
   - CheckPoint
+  - OOLives
+  - Canvas
   layers:
   - Default
   - TransparentFX

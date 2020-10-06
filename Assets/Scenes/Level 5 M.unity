@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &45069256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7952067332973049265, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 2109275031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e1cae94a9db7ee478dc822d456e4706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &194968478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1269,6 +1280,14 @@ PrefabInstance:
       propertyPath: exit
       value: 
       objectReference: {fileID: 1317374308}
+    - target: {fileID: 4759554551314878588, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759554551314878588, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23.299805
+      objectReference: {fileID: 0}
     - target: {fileID: 5653793305030978214, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -19985,6 +20004,10 @@ PrefabInstance:
       propertyPath: jumpingForce
       value: 350
       objectReference: {fileID: 0}
+    - target: {fileID: 5964747265388590519, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
+      propertyPath: pHealth
+      value: 
+      objectReference: {fileID: 45069256}
     - target: {fileID: 7864734603558314512, guid: 24d0b86fed902fb4386d9f41e93c1fc3, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.661

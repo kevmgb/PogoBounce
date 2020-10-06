@@ -45,8 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameHasEnded: 0
   restartDelay: 1
-  fadeCheckpointText: 2
   completeLevelUI: {fileID: 0}
   gameOverUI: {fileID: 0}
-  checkpointReachedUI: {fileID: 4077477416563117833, guid: 8e68152e44a143a4c9e770aca53a600b, type: 3}
   player: {fileID: 0}
+  checkPoint: {fileID: 0}
+  watchAdButton: {fileID: 0}
+  adsOnRestart: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
+  checkpointButton: {fileID: 0}

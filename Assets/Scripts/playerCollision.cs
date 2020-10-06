@@ -5,6 +5,8 @@ public class playerCollision : MonoBehaviour
 {
     public characterController movement; // reference to our character controller script
 
+    public int health = 2;
+
     int nextScene;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,11 +33,13 @@ public class playerCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Lethal")
         {
+            //health -= 1;
             movement.enabled = false;
             //FindObjectOfType<AudioManager>().Play("playerLose");
             Debug.Log("You hit a lethal object");
             FindObjectOfType<gameManager>().EndGame();
             Debug.Log("Showed game over ui");
+            Debug.LogWarning(health);
         }
     }
 
