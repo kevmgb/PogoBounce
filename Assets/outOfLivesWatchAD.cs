@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Advertisements;
 
 [RequireComponent(typeof(Button))]
-public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
+public class outOfLivesWatchAD : MonoBehaviour, IUnityAdsListener
 {
     private string GooglePlay_ID = "3823141";
 
@@ -12,6 +12,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     bool TestMode = true;
 
     public RespawnPlayer respawn;
+
+    private GameObject OOLivesUI;
     void Start()
     {
         myButton = GetComponent<Button>();
@@ -27,10 +29,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         Advertisement.Initialize(GooglePlay_ID, TestMode);
     }
 
-    
-
     // Implement a function for showing a rewarded video ad:
-
     void ShowRewardedVideo()
     {
         Advertisement.Show(myPlacementId);
@@ -54,16 +53,24 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
             // Reward the user for watching the ad to completion.
             //respawn.RespawnPlayerFunc();
 
-            AddHealthReward();
+            AddHealthRewardTwo();
 
+            OOLivesUI = GameObject.FindGameObjectWithTag("OOLives");
+
+            OOLivesUI.SetActive(false);
+            
             Debug.Log("The player watched an ad, give them a reward.");
         }
         else if (showResult == ShowResult.Skipped)
         {
             // Do not reward the user for skipping the ad.
 
-            AddHealthReward();
+            AddHealthRewardTwo();
 
+            OOLivesUI = GameObject.FindGameObjectWithTag("OOLives");
+
+            OOLivesUI.SetActive(false);
+            
             //respawn.RespawnPlayerFunc();
             Debug.Log("The player skipped the ad, give them reward (Still deciding).");
         }
@@ -89,7 +96,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         Advertisement.RemoveListener(this);
     }
 
-    void AddHealthReward()
+    void AddHealthRewardTwo()
     {
         GameObject player = GameObject.Find("pogo");
         player.GetComponent<playerCollision>().health += 1;

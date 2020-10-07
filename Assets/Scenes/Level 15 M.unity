@@ -1617,6 +1617,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 155712094673242545, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: checkPoint
+      value: 
+      objectReference: {fileID: 1778821644}
     - target: {fileID: 289024417863791749, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 99.6001
@@ -1637,6 +1641,10 @@ PrefabInstance:
       propertyPath: adsOnRestart
       value: 
       objectReference: {fileID: 2109275038}
+    - target: {fileID: 2542155088164444391, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: checkPoint
+      value: 
+      objectReference: {fileID: 1778821644}
     - target: {fileID: 3217528540516123789, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 0
@@ -1842,6 +1850,11 @@ GameObject:
 --- !u!1 &2109275034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9191998587971218899, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 2109275031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2109275035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 349324558455031254, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
   m_PrefabInstance: {fileID: 2109275031}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2109275036 stripped
@@ -24657,6 +24670,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 406306549}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: checkpointButton
+      value: 
+      objectReference: {fileID: 2109275035}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager

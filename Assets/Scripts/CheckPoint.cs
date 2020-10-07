@@ -22,7 +22,7 @@ public class CheckPoint : MonoBehaviour
 
     private GameObject pogoplayer;
 
-    public GameObject outOfLivesUI;
+    //public GameObject outOfLivesUI;
 
     //public GameObject myCanvas;
 
@@ -132,7 +132,7 @@ public class CheckPoint : MonoBehaviour
         // If the player passes through the checkpoint, we activate it
         if (other.tag == "Player")
         {
-            Debug.Log("Player touches checkpoint board");
+            //Debug.Log("Player touches checkpoint board");
             firstCheckPointReached = true;
             ActivateCheckPoint();
         }
@@ -140,12 +140,12 @@ public class CheckPoint : MonoBehaviour
 
     public void RespawnPlayerToBoard()
     {
-        Debug.Log("Begin Respawn");
+        //Debug.Log("Begin Respawn");
         pogoplayer = GameObject.Find("pogo");
         int playerHealth = pogoplayer.GetComponent<playerCollision>().health;
 
         if (playerHealth != 0)
-        {
+        {   
             player = GameObject.FindGameObjectWithTag("Player");
 
             boardspawn = GetActiveCheckPointPosition();
@@ -156,19 +156,6 @@ public class CheckPoint : MonoBehaviour
             manager.gameHasEnded = false;
             gameOverUI.SetActive(false);
             Debug.Log("Player has respawned");
-        }
-        else
-        {
-            Debug.Log("Display out of ads screen");
-
-            //outOfLivesUI = Canvas.FindObject("OutOfLivesScreen");
-
-            // the proble is find with tag only finds active objects in scene
-
-           outOfLivesUI.SetActive(true);
-            
-            
-            Debug.Log("Out of lives");
         }
         
     }

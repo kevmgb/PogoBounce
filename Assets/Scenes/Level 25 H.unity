@@ -1793,7 +1793,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 64
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &903278407
 PrefabInstance:
@@ -3152,7 +3152,7 @@ Transform:
   m_Children:
   - {fileID: 2133654331}
   m_Father: {fileID: 0}
-  m_RootOrder: 63
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1803191220
 PrefabInstance:
@@ -3756,6 +3756,10 @@ PrefabInstance:
       propertyPath: adsOnRestart
       value: 
       objectReference: {fileID: 2109275038}
+    - target: {fileID: 2542155088164444391, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: checkPoint
+      value: 
+      objectReference: {fileID: 176760799}
     - target: {fileID: 3217528540516123789, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_textInfo.characterCount
       value: 0
@@ -3814,7 +3818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7302451592857546234, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 7302451592857546234, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4000,6 +4004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d07fe6dbb1522349baa653427e26a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2109275040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 349324558455031254, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+  m_PrefabInstance: {fileID: 2109275031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2109275041 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6237797874449440853, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
@@ -132672,6 +132681,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 406306549}
+    - target: {fileID: 4109892315536756054, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
+      propertyPath: checkpointButton
+      value: 
+      objectReference: {fileID: 2109275040}
     - target: {fileID: 4109892315536756055, guid: c847eba3e143e014b9460fcb25c0281b, type: 3}
       propertyPath: m_Name
       value: GameManager

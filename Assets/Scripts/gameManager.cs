@@ -42,6 +42,7 @@ public class gameManager : MonoBehaviour
     void EndGameDelay()
     {
         Time.timeScale = 0f;
+
         if (checkPoint.firstCheckPointReached != true)
         {
             Debug.Log("No checkpoint was activated, disable watch ads button");
@@ -50,7 +51,7 @@ public class gameManager : MonoBehaviour
             checkpointButton.SetActive(false);
         } else
         {
-            Debug.Log("Player reached atleast one checkpoint, show ads button");
+            //Debug.Log("Player reached atleast one checkpoint, show ads button");
             gameOverUI.SetActive(true);
         }
         // Check if first checkpoint was reached, if not disable rewarded ads button.
@@ -71,7 +72,7 @@ public class gameManager : MonoBehaviour
         {
             gameHasEnded = true;
             FindObjectOfType<AudioManager>().Play("playerLose");
-            Debug.Log("DEAD");
+            //Debug.Log("DEAD");
             minusPlayerHealth();
             Invoke("EndGameDelay", restartDelay);
 
@@ -84,7 +85,7 @@ public class gameManager : MonoBehaviour
         {
             gameHasEnded = true;
             
-            Debug.Log("LEVEL COMPLETE");
+            //Debug.Log("LEVEL COMPLETE");
             Invoke("CompleteLevel", restartDelay);
         }
 

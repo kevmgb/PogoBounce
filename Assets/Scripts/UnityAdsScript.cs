@@ -11,7 +11,7 @@ public class UnityAdsScript : MonoBehaviour
     string GooglePlay_ID = "3823141";
     bool TestMode = true;
 
-    public RespawnPlayer respawn;
+    //public RespawnPlayer respawn;
 
     //string myPlacementId = "rewardedVideo";
 
@@ -35,7 +35,7 @@ public class UnityAdsScript : MonoBehaviour
         if (Advertisement.IsReady(interstitialAd))
         {
             Advertisement.Show(interstitialAd);
-            Debug.Log("Displaying interstitial ad");
+            //Debug.Log("Displaying interstitial ad");
         }
         else
         {

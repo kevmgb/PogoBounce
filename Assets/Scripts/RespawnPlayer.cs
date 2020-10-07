@@ -29,5 +29,4 @@ public class RespawnPlayer : MonoBehaviour
     //    Invoke("RespawnPlayerFuncDelayed", respawnDelay);
     //    Debug.Log("Delay player respawn a little ...");
     //}
-    
 }
