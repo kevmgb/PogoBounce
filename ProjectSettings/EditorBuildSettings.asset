@@ -6,6 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level 24 H.unity
-    guid: d10b18085c65beb4ca9c751bda710adf
+    path: Assets/Scenes/Easy Levels/Level 1.unity
+    guid: 98a5afe2ef5dfcf41844cf2c6df51233
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 2.unity
+    guid: c556d40c7352be241801e6184a0b78ea
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 3.unity
+    guid: aaa5d2da70f77e14f8da6604450cd12b
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 4.unity
+    guid: b1152ffe0371feb44a0ca2e49461d04e
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 5.unity
+    guid: f2a82c6e85d34b84386f81b4ee479cbb
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 6.unity
+    guid: 81f0cd6e7fedc6c4e8b6499b6117ca28
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 7.unity
+    guid: 8711ef0f96e9d2c4ba9ad53642a12c9a
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 8.unity
+    guid: cf804b7c00d05394ab6c4b429c145186
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 9.unity
+    guid: 59343d04fa938b74cb5d3274eb6d6ff8
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 10.unity
+    guid: 49232d7cfef51c74784ce4a4a162503c
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 11.unity
+    guid: 1efc520c9a3889942b0c14913dc86ef2
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 12.unity
+    guid: b90fd35a4d9bc6945978b81a3a45f09f
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 13.unity
+    guid: c71dee1536449ef47b2b4c33af5339d9
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 14.unity
+    guid: 3a331e4a536ad4c4a9b4670b2a60b721
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/Level 15.unity
+    guid: e0d6cf9ce0f72a740970b509451e6114
   m_configObjects: {}
