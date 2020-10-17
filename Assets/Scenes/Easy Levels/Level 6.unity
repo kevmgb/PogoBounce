@@ -1370,6 +1370,10 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3557074960536786096, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.080078
+      objectReference: {fileID: 0}
     - target: {fileID: 4226500659973612380, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: player
       value: 
@@ -19354,11 +19358,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5916744991559538432, guid: 45740ac4ca78e5b4b908aafc47d6c8ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.37
+      value: -74.84
       objectReference: {fileID: 0}
     - target: {fileID: 5916744991559538432, guid: 45740ac4ca78e5b4b908aafc47d6c8ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.67
+      value: 7.03
       objectReference: {fileID: 0}
     - target: {fileID: 5916744991559538432, guid: 45740ac4ca78e5b4b908aafc47d6c8ed, type: 3}
       propertyPath: m_LocalPosition.z
