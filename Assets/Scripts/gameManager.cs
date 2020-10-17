@@ -99,19 +99,19 @@ public class gameManager : MonoBehaviour
     }
 
 
-    //private void OnApplicationFocus(bool focus)
-    //{
-    //    if (focus)
-    //    {
-    //        Debug.Log("Game is in focus");
-    //        return; 
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("game is out of focus");
-    //        pauseMenuUI.SetActive(true);
-    //        Time.timeScale = 0f;
-    //    }
-    //}
+    private void OnApplicationFocus(bool focus)
+    {
+        if (focus)
+        {
+            Debug.Log("Game is in focus");
+            return;
+        }
+        else
+        {
+            Debug.Log("game is out of focus");
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
 
 }
