@@ -8,13 +8,15 @@ public class levelSelect : MonoBehaviour
 
     private void Start()
     {
-        int levelAt = PlayerPrefs.GetInt("levelAt", 3);
+        int levelAt = PlayerPrefs.GetInt("levelReached", 3);
 
         for (int i=0; i < lvlButtons.Length; i++)
         {
             if (i + 3 > levelAt)
                 lvlButtons[i].interactable = false;
         }
+
+        Debug.LogWarning("Player prefs int in level select " + levelAt);
     }
 
 }

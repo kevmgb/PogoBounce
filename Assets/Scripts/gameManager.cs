@@ -25,11 +25,31 @@ public class gameManager : MonoBehaviour
 
     public GameObject checkpointButton;
 
+    int nextScene;
+
     //public GameObject playerH;
+
+    private void Start()
+    {
+        nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+    }
 
     public void CompleteLevel()
     {
         completeLevelUI.SetActive(true);
+
+        //Debug.LogWarning("Next Scene is index: " + nextScene);
+
+        //Setting int for index
+        if (nextScene > PlayerPrefs.GetInt("levelReached"))
+        {
+            PlayerPrefs.SetInt("levelReached", nextScene);
+            // Debug.LogWarning("Set player prefs");
+        }
+
+        //Debug.LogWarning("Current Player prefs is " + PlayerPrefs.GetInt("levelReached"));
+        //Debug.LogWarning("Didnt set player prefs");
+
         Time.timeScale = 0f;
         playAttempts++;
         if (playAttempts == 5)
@@ -84,7 +104,7 @@ public class gameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            
+
             //Debug.Log("LEVEL COMPLETE");
             Invoke("CompleteLevel", restartDelay);
         }
