@@ -15,6 +15,7 @@ TagManager:
   - CheckPoint
   - OOLives
   - Canvas
+  - pauseMenu
   layers:
   - Default
   - TransparentFX
