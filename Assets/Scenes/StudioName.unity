@@ -240,8 +240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 322, y: 0}
-  m_SizeDelta: {x: 634.1455, y: 622.9232}
+  m_AnchoredPosition: {x: 423, y: 108}
+  m_SizeDelta: {x: 811.3279, y: 400.25928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862701229
 MonoBehaviour:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SYMBOLS STUDIO
+  m_text: SYMBOLS INTERACTIVE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 862701229}
-    characterCount: 14
+    characterCount: 19
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc8e8810f0b04df4dba5f471e2f911d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3129a90bf28d8194d9fe8592fff5d819, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
