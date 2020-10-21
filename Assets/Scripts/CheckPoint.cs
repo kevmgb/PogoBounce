@@ -145,12 +145,14 @@ public class CheckPoint : MonoBehaviour
         int playerHealth = pogoplayer.GetComponent<playerCollision>().health;
 
         if (playerHealth != 0)
-        {   
+        {
+            Time.timeScale = 1f;
             player = GameObject.FindGameObjectWithTag("Player");
 
             boardspawn = GetActiveCheckPointPosition();
             Debug.Log("board spawn: " + boardspawn);
             player.GetComponent<Rigidbody2D>().MovePosition(boardspawn);
+            player.transform.Rotate(0.0f, 0.0f, 0.0f);
 
             player.GetComponent<characterController>().enabled = true;
             manager.gameHasEnded = false;
