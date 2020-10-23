@@ -45,22 +45,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: playerWin
-    clip: {fileID: 8300000, guid: f7ffb54f0af0f6141b3854e0f7b89c97, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: bc9c6d0181f0ec64ea172da9d47eb110, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: playerLose
-    clip: {fileID: 8300000, guid: e09e264e9727c754681f3e39b2d18644, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: a3f745d90b3d6554abe1b05140cee8b4, type: 3}
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: playerBounce
-    clip: {fileID: 8300000, guid: 057e1cf7cdfaf7449bc148001f26613d, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: 03d5a02a2d815ab4489d9dd3629b6ea8, type: 3}
+    volume: 0.1
     pitch: 1
     source: {fileID: 0}
   - name: checkpointSound
-    clip: {fileID: 8300000, guid: 3f57f346353c74245a57e823687e978d, type: 3}
+    clip: {fileID: 8300000, guid: fe4802ff88fb3094a92c72b06a26016b, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}

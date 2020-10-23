@@ -2054,7 +2054,7 @@ PrefabInstance:
       objectReference: {fileID: 5809260128154223980}
     - target: {fileID: 4759554551314878588, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 71.3
+      value: 88.1
       objectReference: {fileID: 0}
     - target: {fileID: 5305162580449720299, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_textInfo.characterCount
@@ -2114,7 +2114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7302451592857546234, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 7302451592857546234, guid: 578e8fe26c840b24dbd9698ba5d14665, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
