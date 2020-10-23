@@ -56,7 +56,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: playerBounce
     clip: {fileID: 8300000, guid: 03d5a02a2d815ab4489d9dd3629b6ea8, type: 3}
-    volume: 0.1
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: checkpointSound
