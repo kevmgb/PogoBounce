@@ -10,6 +10,8 @@ public class characterController : MonoBehaviour
     public float tiltAngle = 60.0f;
     float smooth = 5.0f;
 
+    public Animator animator;
+
     public Joystick joystick;
 
     //Vector2 initialPosition;
@@ -23,6 +25,7 @@ public class characterController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        animator.SetBool("jumping", isGrounded);
         if (isGrounded == true)
         {
             FindObjectOfType<AudioManager>().Play("playerBounce");
