@@ -30,7 +30,7 @@ public class characterController : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("playerBounce");
             Jump();
-            Debug.Log("Player is grounded");
+            //Debug.Log("Player is grounded");
         }
 
         // Smoothly tilts a transform towards a target rotation.
@@ -52,6 +52,6 @@ public class characterController : MonoBehaviour
         rb2D.AddForce(transform.up * jumpingForce * Time.deltaTime, ForceMode2D.Impulse);
         // rb2D.velocity = new Vector3(0, jumpingForce, 0);
         isGrounded = false;
-        Debug.Log("Applying upwards force");
+        //Debug.Log("Applying upwards force");
     }
 }

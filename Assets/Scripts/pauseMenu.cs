@@ -52,7 +52,7 @@ public class pauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
         restartAttempts++;
-        if (restartAttempts == 10)
+        if (restartAttempts == 7)
         {
             adsOnRestart.DisplayInterstitialAds();
             restartAttempts = 0;

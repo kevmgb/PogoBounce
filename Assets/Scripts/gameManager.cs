@@ -65,7 +65,7 @@ public class gameManager : MonoBehaviour
 
         if (checkPoint.firstCheckPointReached != true)
         {
-            Debug.Log("No checkpoint was activated, disable watch ads button");
+            //Debug.Log("No checkpoint was activated, disable watch ads button");
             gameOverUI.SetActive(true);
             watchAdButton.SetActive(false);
             checkpointButton.SetActive(false);

@@ -101,9 +101,9 @@ public class CheckPoint : MonoBehaviour
         if (reachedCheckpoint == false)
         {
             checkPointUI.SetActive(true);
-            Debug.Log("SHOW CHECKPOINT REACHED UI");
+            //Debug.Log("SHOW CHECKPOINT REACHED UI");
             FindObjectOfType<AudioManager>().Play("checkpointSound");
-            Debug.Log("PLAYED CHECKPOINT REACH SOUND");
+            //Debug.Log("PLAYED CHECKPOINT REACH SOUND");
             Invoke("checkPointUIDisable", checkPointUIDelay);
             reachedCheckpoint = true;
         }
