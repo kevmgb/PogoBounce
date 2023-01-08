@@ -9,8 +9,6 @@ public class pauseMenu : MonoBehaviour
     
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public static int restartAttempts;
-    public UnityAdsScript adsOnRestart;
 
     // Update is called once per frame
     public void PauseGame()
@@ -49,24 +47,7 @@ public class pauseMenu : MonoBehaviour
         // Game was freezing on restart because time scale hasnt been changed back to 1
         Time.timeScale = 1f;
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-        restartAttempts++;
-        if (restartAttempts == 7)
-        {
-            adsOnRestart.DisplayInterstitialAds();
-            restartAttempts = 0;
-
-            
-            // Reset ad that plays after 5 levels to avoid another ad playing back to back
-            if (gameManager.playAttempts == 4)
-            {
-                gameManager.playAttempts -= 2;
-               
-            }
-
-        }
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     public void Mute()

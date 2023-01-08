@@ -7,8 +7,6 @@ public class gameManager : MonoBehaviour
     public bool gameHasEnded = false;
     public float restartDelay = 2f;
 
-    public static int playAttempts;
-
     public GameObject completeLevelUI;
 
     public GameObject gameOverUI;
@@ -18,8 +16,6 @@ public class gameManager : MonoBehaviour
     public CheckPoint checkPoint;
 
     public GameObject watchAdButton;
-
-    public UnityAdsScript adsOnRestart;
 
     public GameObject pauseMenuUI;
 
@@ -51,12 +47,6 @@ public class gameManager : MonoBehaviour
         //Debug.LogWarning("Didnt set player prefs");
 
         Time.timeScale = 0f;
-        playAttempts++;
-        if (playAttempts == 5)
-        {
-            adsOnRestart.DisplayInterstitialAds();
-            playAttempts = 0;
-        }
     }
 
     void EndGameDelay()
